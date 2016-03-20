@@ -17,6 +17,7 @@
       "post-merge": []
     }
   },
+  "private": true,
   "files": [
     "index.js"
   ],
@@ -42,7 +43,8 @@
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit",
     "unit": "mocha index.js",
-    "commit": "commit-wizard"
+    "commit": "commit-wizard",
+    "start": "node index.js"
   },
   "devDependencies": {
     "git-issues": "1.2.0",
