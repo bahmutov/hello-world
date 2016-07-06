@@ -22,6 +22,9 @@ http localhost:1337
 
 You should see `Hello World` message
 
+For example, you can use this project to try
+[the Dokku platform](https://glebbahmutov.com/blog/running-multiple-applications-in-dokku/)
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2016
