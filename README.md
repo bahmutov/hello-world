@@ -6,10 +6,25 @@
 
 Example from [howtonode.org/hello-node](http://howtonode.org/hello-node)
 
+```sh
+git clone git@github.com:bahmutov/hello-world.git
+cd hello-world
+npm install
+npm start
+```
+
+From another terminal execute one of the following
+
+```sh
+curl localhost:1337
+http localhost:1337
+```
+
+You should see `Hello World` message
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2016
-
 
 * [@bahmutov](https://twitter.com/bahmutov)
 * [glebbahmutov.com](http://glebbahmutov.com)
