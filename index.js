@@ -13,5 +13,5 @@ const port = process.env.PORT || 1337
 server.listen(port)
 
 const safeEnv = require('safe-env')
-console.log(safeEnv(['NPM_TOKEN']))
+console.log(safeEnv(['NPM_TOKEN', 'DEPLOY_DOMAIN']))
 console.log('Server running at port', port)
