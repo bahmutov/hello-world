@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 6
+env:
+  - secure: bTRYrb+5BeMiLTXeDJbqX+S5wpp1QbmFt339c5Gxv75fTzWf6sCYEu/LQJjQ1/KIdXXTX/BwMvOXaxUIWyjJI23unenS+LFwRZUabsznP4Nu3M88zH2lAAD//P9EQjJl7L/GlIytppOrO9wRz+NAlg0PoxC2JUHBQ5m6OAdt1m7Y+xF4CY62PgX0IPL+oltLXjRFsX7rIsWsXRC0fO/AT9NHlqlzAHoLUWve4CdW5NOieCu1fe3H/ojO7M26GYXJNmEj9YZ+9+++WvtVx/ryh100sqFZ+YLwHPKI9gBU2F/FjzElr3VpB0160Fdjc1kX8bGCPwShF+c4xx956qq1zg==
+after_success:
+  - echo Deploying to $DEPLOY_DOMAIN
+  - if [ "$BRANCH" == "master" ]; then git remote add dokku shippable@$DEPLOY_DOMAIN:hello; fi
+  - if [ "$BRANCH" == "master" ]; then git push dokku master; fi
