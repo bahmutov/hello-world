@@ -1,7 +1,7 @@
 {
   "name": "hello-world",
   "description": "Nodejs test / demo server application",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": "https://github.com/bahmutov/hello-world/issues",
   "config": {
@@ -45,7 +45,6 @@
     "unit": "mocha index.js",
     "commit": "commit-wizard",
     "start": "node index.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "e2e-test": "curl $NOW_URL"
   },
   "devDependencies": {
@@ -53,10 +52,7 @@
     "mocha": "2.4.5",
     "pre-git": "3.7.0",
     "standard": "6.0.8",
-    "standard-format": "2.1.1",
-    "semantic-release": "^4.3.5"
+    "standard-format": "2.1.1"
   },
-  "dependencies": {
-    "safe-env": "1.0.0"
-  }
+  "dependencies": {}
 }
