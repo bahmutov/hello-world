@@ -2,6 +2,7 @@
 
 > Nodejs test / demo server application
 
+[![Build status][ci-image] ][ci-url]
 [![js-standard-style][standard-image] ](http://standardjs.com/)
 
 Example from [howtonode.org/hello-node](http://howtonode.org/hello-node)
@@ -64,4 +65,6 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+[ci-image]: https://travis-ci.org/bahmutov/hello-world.svg?branch=master
+[ci-url]: https://travis-ci.org/bahmutov/hello-world
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg

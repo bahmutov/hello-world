@@ -1,0 +1,18 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '6'
+before_script:
+  - npm prune
+script:
+  - npm test
+after_success:
+  - echo All good
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
