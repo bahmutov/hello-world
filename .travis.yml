@@ -14,7 +14,7 @@ script:
 after_success:
   - npm i -g now-pipeline
   - DEBUG=now-pipeline now-pipeline --test "npm run e2e-test" index.js package.json
-  - now-pipeline prune
+  - now-pipeline-prune
   - echo All good
 branches:
   except:
