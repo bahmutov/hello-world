@@ -13,7 +13,7 @@ script:
   - npm test
 after_success:
   - npm i -g now-pipeline
-  - now-pipeline --test "npm run e2e-test" index.js package.json
+  - DEBUG=now-pipeline now-pipeline --test "npm run e2e-test" index.js package.json
   - now-pipeline prune
   - echo All good
 branches:
