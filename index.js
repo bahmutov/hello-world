@@ -7,7 +7,7 @@ const message = 'Hello World from Node ' + version + '\n'
 // Configure our HTTP server to respond with Hello World to all requests.
 const server = http.createServer(function (request, response) {
   console.log('responding with hello')
-  response.writeHead(200, {'Content-Type': 'text/plain'})
+  response.writeHead(200, { 'Content-Type': 'text/plain' })
   response.end(message)
 })
 

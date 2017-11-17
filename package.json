@@ -39,20 +39,22 @@
     "format": "standard-format -w index.js",
     "issues": "git-issues",
     "lint": "standard --verbose index.js",
-    "pretest": "npm run format && npm run lint",
+    "pretest": "npm run lint",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit",
     "unit": "mocha index.js",
     "commit": "commit-wizard",
     "start": "node index.js",
-    "e2e-test": "curl $NOW_URL"
+    "e2e-test": "curl $NOW_URL",
+    "pretty": "prettier-standard *.js",
+    "prelint": "npm run pretty"
   },
   "devDependencies": {
     "git-issues": "1.2.0",
     "mocha": "2.4.5",
     "pre-git": "3.7.0",
-    "standard": "6.0.8",
-    "standard-format": "2.1.1"
+    "prettier-standard": "7.0.3",
+    "standard": "10.0.3"
   },
   "dependencies": {}
 }
