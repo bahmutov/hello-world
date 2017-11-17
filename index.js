@@ -1,8 +1,7 @@
 // example from http://howtonode.org/hello-node
 // Load the http module to create an http server.
 const http = require('http')
-const version = process.versions.node
-const message = 'Hello World from Node ' + version + '\n'
+const message = 'Hello World from Node\n'
 
 // Configure our HTTP server to respond with Hello World to all requests.
 const server = http.createServer(function (request, response) {
