@@ -1,0 +1,11 @@
+FROM mhart/alpine-node:8
+
+WORKDIR /app
+COPY . .
+
+RUN npm install
+RUN npm run lint
+RUN npm run ci
+
+EXPOSE 1337
+CMD ["node", "index.js"]
