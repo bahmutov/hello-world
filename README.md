@@ -26,6 +26,27 @@ You should see `Hello World` message
 For example, you can use this project to try
 [the Dokku platform](https://glebbahmutov.com/blog/running-multiple-applications-in-dokku/)
 
+## Small Docker image
+
+In order to show how to build smaller Docker image, while still testing this app,
+see the three Docker files
+
+* [Dockerfile-simple](Dockerfile-simple)
+* [Dockerfile](Dockerfile) with multi-stage feature
+* [Dockerfile-bare](Dockerfile-bare) based on the smallest Node images without NPM
+
+The images built from these files show the space savings
+
+```
+$ docker images gleb/hello-world
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+gleb/hello-world    bare                78cdddcd77ac        23 seconds ago      37.9MB
+gleb/hello-world    multi-stage         44dcd42b11f4        17 minutes ago      49.4MB
+gleb/hello-world    simple              aed28e2bde45        31 minutes ago      202MB
+```
+
+Read blog post [Making small Docker image](https://glebbahmutov.com/blog/making-small-docker-image/) for more details.
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2016
